@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <title layout:title-pattern="$"LAYOUT_TITLE-$CONTENT_TITLE>My Application</title>
+  <!-- Include any common CSS or JS files -->
+</head>
+<body>
+<header th:replace="fragments/header::header"></header>
+
+<!-- Content specific to each page will be included here -->
+<main layout:fragment="content">
+  <h1>Main content goes here</h1>
+</main>
+
+<footer th:replace="fragments/footer::footer"></footer>
+</body>
+</html>
